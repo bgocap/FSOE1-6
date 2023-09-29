@@ -1,7 +1,7 @@
 <h1>Full Stack Web Development Open - Part 6</h1>
 
 Advanced state management</br>
-Exercises are commits. Done **7** out of *24*
+Exercises are commits. Done **8** out of *24*
 </br></br>
 
 <h3>Unicafe-Redux</h3>
@@ -41,6 +41,7 @@ Exercises are commits. Done **7** out of *24*
  ┃ ┗ 📜robots.txt
  ┣ 📂src
  ┃ ┣ 📂components
+ ┃ ┃ ┃ 📜AnecdoteList.js
  ┃ ┃ ┃ 📜AnecdoteForm.js
  ┃ ┃ ┗ 📜Notification.js
  ┃ ┣ 📂reducers
