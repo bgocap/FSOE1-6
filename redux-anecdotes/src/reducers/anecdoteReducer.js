@@ -33,6 +33,8 @@ const reducer = (state = initialState, action) => {
   }
 }
 
+//Action creators (they were here since the beggining)
+
 export const addVote = (id) =>{
   return {
     type: 'VOTE',
