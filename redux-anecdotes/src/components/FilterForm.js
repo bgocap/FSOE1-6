@@ -7,7 +7,6 @@ const FilterForm = () => {
 
     const setFilter = (newFilter) =>{
         dispatch(filterChange(newFilter))
-        console.log(newFilter)
     }
 
     return (

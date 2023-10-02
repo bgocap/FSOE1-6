@@ -5,10 +5,8 @@ const AnecdoteList = () => {
 
     const anecdotes = useSelector(state =>{
         if ( state.filter !== '' ) {
-            console.log('whats going down')
-            const result = state.anecdotes.filter(filteredAnecdotes=>
+            return state.anecdotes.filter(filteredAnecdotes=>
                 filteredAnecdotes.content.toLowerCase().match(state.filter.toLowerCase()))
-            return result
           }else{return state.anecdotes}
     })
 
@@ -27,7 +25,7 @@ const AnecdoteList = () => {
                         {anecdote.content}
                     </div>
                     <div>
-                        has {anecdote.votes}
+                        has {anecdote.votes} votes
                         <button onClick={() => vote(anecdote.id)}>vote</button>
                     </div>
                     </div>
