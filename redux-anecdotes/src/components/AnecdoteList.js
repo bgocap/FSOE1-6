@@ -4,7 +4,7 @@ import { addVote } from '../reducers/anecdoteReducer'
 const AnecdoteList = () => {
 
     const anecdotes = useSelector(state =>{
-        if ( state.filter !== '' ) {
+        if ( state.filter ) {
             return state.anecdotes.filter(filteredAnecdotes=>
                 filteredAnecdotes.content.toLowerCase().match(state.filter.toLowerCase()))
           }else{return state.anecdotes}
