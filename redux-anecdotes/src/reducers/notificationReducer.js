@@ -1,17 +1,26 @@
 import { createSlice } from '@reduxjs/toolkit'
+import anecdoteService from '../services/anecdotes'
 
 const initialState = null
 
 const notificationSlice = createSlice({
     name: 'notification', initialState ,reducers: {
-      setNotification(state,action){
+      setContent(state,action){
         return action.payload
       },
-      resetNotification(state,action){
+      resetContent(state,action){
         return null
       }
     }
 })
 
-export const { setNotification,resetNotification } = notificationSlice.actions
+export const { setContent,resetContent } = notificationSlice.actions
+
+export const setNotification = (message,timeoutSeconds) =>{
+  return dispatch => {
+    dispatch(setContent(message))
+    setTimeout(() => {dispatch(resetContent())}, timeoutSeconds*1000)
+  }
+}
+
 export default notificationSlice.reducer
