@@ -1,7 +1,7 @@
 <h1>Full Stack Web Development Open - Part 6</h1>
 
 Advanced state management</br>
-Exercises are commits. Done **19** out of *24*
+Exercises are commits. Done **20** out of *24*
 </br></br>
 
 <h3>Unicafe-Redux</h3>
@@ -61,3 +61,28 @@ Exercises are commits. Done **19** out of *24*
  ┣ 📜package-lock.json
  ┗ 📜package.json
  ```
+
+<h3>Query-Anecdotes</h3>
+
+```
+ 📦query-anecdotes
+ ┣ 📂node_modules(.gitignore)
+ ┣ 📂public
+ ┃ ┗ 📜vite.svg
+ ┣ 📂src
+ ┃ ┣ 📂components
+ ┃ ┃ ┣ 📜AnecdoteForm.jsx
+ ┃ ┃ ┗ 📜Notification.jsx
+ ┃ ┣ 📜App.jsx
+ ┃ ┗ 📜main.jsx
+ ┣ 📜.DS_Store
+ ┣ 📜.eslintrc.cjs
+ ┣ 📜.gitignore
+ ┣ 📜README.md
+ ┣ 📜db.json
+ ┣ 📜index.html
+ ┣ 📜package-lock.json
+ ┣ 📜package.json
+ ┣ 📜requests.js
+ ┗ 📜vite.config.js
+```
